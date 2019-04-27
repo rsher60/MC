@@ -1,0 +1,30 @@
+{{!--{{#if a}}
+    {{a.stringify}}
+    
+  {{/if}}
+ 
+
+{{#each a}}
+      <li> {{this._id}}</li> 
+        <li>{{this.length}}</li>
+        <li>{{this.uploadDate}}</li>
+        
+--}}
+
+
+{{#each a}}
+<table style="width:100%" , border=1>
+  <tr>
+    <th>Id</th>
+    <th>Length</th> 
+    <th>Upload Date</th>
+  </tr>
+  <tr>
+    <td>{{this._id}}</td>
+    <td>{{this.length}}</td> 
+    <td>{{this.uploadDate}}</td>
+  </tr>
+ 
+</table>
+
+{{/each}}
